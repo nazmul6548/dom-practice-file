@@ -9,19 +9,19 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div id="all-div" class="flex mt-10 p-4">
-        <div id="div-id">
+    <div id="all-div" class="flex flex-col w-[100%] lg:flex-row mt-10 p-4 ">
+        <div id="div-id" class="grid grid-cols-1 w-[100%] lg:grid-cols-3 lg:w-[80%] gap-10 mt-5 items-center justify-center">
 
             <!-- card 1 -->
-            <div class="card w-96 bg-base-300 shadow-xl pt-5">
+            <div class="card bg-base-300 shadow-xl pt-5 mt-10 ">
                 <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
                 <div class="card-body ">
-                  <h2 class="card-title text-slate-900 text-3xl font-bold pb-3">Triangle...</h2>
+                  <h2 class="card-title text-slate-900 text-3xl font-bold pb-3">Triangle!...</h2>
                   <p class="text-slate-900 text-3xl pb-3">Area = 0.5 X b X h</p>
                   <!-- input -->
                   <div class="flex pb-3">
-                    <input class="w-20 h-10 rounded-lg text-black text-2xl pl-5" type="text" id="input1" placeholder="b"> <span class="pl-5 text-2xl text-black font-bold">cm</span>
-                    <input class="w-20 h-10 rounded-lg text-black text-2xl pl-5 ml-5" type="text" id="input2" placeholder="h"> <span class="pl-5 text-2xl text-black font-bold">cm</span>
+                    <input class="w-20 h-10 rounded-lg text-black text-2xl pl-5" type="text" id="input1" placeholder="b"> <span class="pl-1 text-xl lg:pl-5 text-2xl text-black font-bold">cm</span>
+                    <input class="w-20 h-10 rounded-lg text-black text-2xl pl-5 ml-5" type="text" id="input2" placeholder="h"> <span class="pl-1 text-xl lg:pl-5 text-2xl text-black font-bold">cm</span>
 
                   </div>
                   <!-- input -->
@@ -39,15 +39,15 @@
             <!-- card 1 -->
 
             <!-- card2 -->
-            <div class="card w-96 bg-orange-200 shadow-xl pt-5">
+            <div class="card  bg-orange-200 shadow-xl pt-5 mt-10">
               <figure><img src="./images/rectangle.png" alt="Shoes" /></figure>
               <div class="card-body">
-                <h2 class="card-title text-slate-900 text-3xl font-bold pb-3">Rectangle...</h2>
+                <h2 class="card-title text-slate-900 text-3xl font-bold pb-3">Rectangle!...</h2>
                 <p class="text-slate-900 text-3xl pb-3">Area (A) = w X I</p>
                 <!-- input -->
                 <div class="flex pb-3">
-                  <input class="w-20 h-10 rounded-lg text-black text-2xl pl-1" type="text" id="rectangleLength" placeholder="length"><span class="pl-5 text-2xl text-black font-bold">cm</span>
-                  <input class="w-20 h-10 rounded-lg text-black text-2xl pl-1 ml-5" type="text" id="rectanglewidth" placeholder="width"><span class="pl-5 text-2xl text-black font-bold">cm</span>
+                  <input class="w-20 h-10 rounded-lg text-black text-2xl pl-1" type="text" id="rectangleLength" placeholder="length"><span class="pl-1 text-xl lg:pl-5 text-2xl text-black font-bold">cm</span>
+                  <input class="w-20 h-10 rounded-lg text-black text-2xl pl-1 ml-5" type="text" id="rectanglewidth" placeholder="width"><span class="pl-1 text-xl lg:pl-5 text-2xl text-black font-bold">cm</span>
                 </div>
                 <!-- input -->
                 <!-- store -->
@@ -61,15 +61,15 @@
             <!-- card2 -->
 
             <!-- card3 -->
-            <div class="card w-96 bg-cyan-300 shadow-xl pt-5">
+            <div class="card  bg-cyan-300 shadow-xl pt-5 mt-10">
               <figure><img src="./images/parallelogram.png" alt="Shoes" /></figure>
               <div class="card-body">
                 <h2 class="card-title text-slate-900 text-3xl font-bold pb-3">Parallelogram!...</h2>
                 <p class="text-slate-900 text-3xl pb-3">Area (A) = b X h</p>
                 <!-- input -->
                 <div class="flex pb-3">
-                  <input class="w-20 h-10 rounded-lg text-black text-2xl pl-1" type="text" id="parallelogramBase" placeholder="base"><span class="pl-5 text-2xl text-black font-bold">cm</span>
-                  <input class="w-20 h-10 rounded-lg text-black text-2xl pl-1 ml-5" type="text" id="parallelogramHeight" placeholder="height"><span class="pl-5 text-2xl text-black font-bold">cm</span>
+                  <input class="w-20 h-10 rounded-lg text-black text-2xl pl-1" type="text" id="parallelogramBase" placeholder="base"><span class="pl-1 text-xl lg:pl-5 text-2xl text-black font-bold">cm</span>
+                  <input class="w-20 h-10 rounded-lg text-black text-2xl pl-1 ml-5" type="text" id="parallelogramHeight" placeholder="height"><span class="pl-1 text-xl lg:pl-5 text-2xl text-black font-bold">cm</span>
                 </div>
                 <!-- input -->
                 <!-- store -->
@@ -83,15 +83,15 @@
             <!-- card3 -->
 
             <!-- card4 -->
-            <div class="card w-96 bg-indigo-300 shadow-xl pt-5">
+            <div class="card  bg-indigo-300 shadow-xl pt-5 mt-10 ">
               <figure><img src="./images/ellipse.png" alt="Shoes" /></figure>
               <div class="card-body">
                 <h2 class="card-title text-slate-900 text-3xl font-bold pb-3">Ellipse!...</h2>
                 <p class="text-slate-900 text-3xl pb-3">Area = π X a X b</p>
                 <!-- input -->
                 <div class="flex pb-3">
-                  <input class="w-20 h-10 rounded-lg text-black text-2xl pl-1" type="text" id="ellipseMajjor" placeholder="major"><span class="pl-5 text-2xl text-black font-bold">cm</span>
-                  <input class="w-20 h-10 rounded-lg text-black text-2xl pl-1 ml-5" type="text" id="ellipseMinor" placeholder="minor"><span class="pl-5 text-2xl text-black font-bold">cm</span>
+                  <input class="w-20 h-10 rounded-lg text-black text-2xl pl-1" type="text" id="ellipseMajjor" placeholder="major"><span class="pl-1 text-xl lg:pl-5 text-2xl text-black font-bold">cm</span>
+                  <input class="w-20 h-10 rounded-lg text-black text-2xl pl-1 ml-5" type="text" id="ellipseMinor" placeholder="minor"><span class="pl-1 text-xl lg:pl-5 text-2xl text-black font-bold">cm</span>
                 </div>
                 <!-- input -->
                 <!-- store -->
@@ -105,37 +105,37 @@
             <!-- card4 -->
 
             <!-- card5 -->
-            <div class="card w-96 bg-fuchsia-400 shadow-xl pt-5">
+            <div class="card  bg-purple-400 shadow-xl pt-5 mt-10 ">
               <figure><img src="./images/rhombus.png" alt="Shoes" /></figure>
               <div class="card-body">
-                <h2 class="card-title text-slate-900 text-3xl font-bold pb-3">Rhombus!...</h2>
-                <p class="text-slate-900 text-3xl pb-3">Area = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+                <h2 class="card-title text-slate-900 text-3xl font-bold pb-3">Rombosh!...</h2>
+                <p class="text-slate-900 text-3xl pb-3">Area (A) =0.5Xd1Xd2</p>
                 <!-- input -->
                 <div class="flex pb-3">
-                  <input class="w-20 h-10 rounded-lg text-black text-2xl pl-1" type="text" id="ellipseMajjor" placeholder="major"><span class="pl-5 text-2xl text-black font-bold">cm</span>
-                  <input class="w-20 h-10 rounded-lg text-black text-2xl pl-1 ml-5" type="text" id="ellipseMinor" placeholder="minor"><span class="pl-5 text-2xl text-black font-bold">cm</span>
+                  <input class="w-20 h-10 rounded-lg text-black text-2xl pl-1" type="text" id="rhombosD1" placeholder="d1"><span class="pl-1 text-xl lg:pl-5 text-2xl text-black font-bold">cm</span>
+                  <input class="w-20 h-10 rounded-lg text-black text-2xl pl-1 ml-5" type="text" id="rhombosD2" placeholder="d2"><span class="pl-1 text-xl lg:pl-5 text-2xl text-black font-bold">cm</span>
                 </div>
                 <!-- input -->
                 <!-- store -->
-                <p class="text-2xl text-black pb-3">Area: <span id="rhombusArea">result</span>   <span class="text-2xl  font-bold">square unit</span></p>
+                <p class="text-2xl text-black pb-3">Area: <span id="rhombusArea">result</span>   <span class="text-2xl  font-bold">cm<sup>2</sup></span></p>
                 <!-- store -->
                 <div id="rhombusButton" class="card-actions justify-end">
-                  <button class="btn btn-primary w-full text-white text-2xl bg-neutral-800 border-0">Calculate</button>
+                  <button class="btn btn-primary w-full text-white text-2xl bg-blue-800 border-0">Calculate</button>
                 </div>
               </div>
             </div>
             <!-- card5 -->
 
             <!-- card6 -->
-            <div class="card w-96 bg-rose-600 shadow-xl pt-5">
+            <div class="card  bg-rose-600 shadow-xl pt-5 mt-10 ">
               <figure><img src="./images/p.png" alt="Shoes" /></figure>
               <div class="card-body">
-                <h2 class="card-title text-slate-900 text-3xl font-bold pb-3">Pentagon...</h2>
+                <h2 class="card-title text-slate-900 text-3xl font-bold pb-3">Pentagon!...</h2>
                 <p class="text-slate-900 text-3xl pb-3">Area (A) = 0.5 X p X a</p>
                 <!-- input -->
                 <div class="flex pb-3">
-                  <input class="w-20 h-10 rounded-lg text-black text-2xl pl-1" type="text" id="pantagonA" placeholder="p"><span class="pl-5 text-2xl text-black font-bold">cm</span>
-                  <input class="w-20 h-10 rounded-lg text-black text-2xl pl-1 ml-5" type="text" id="pantagonP" placeholder="a"><span class="pl-5 text-2xl text-black font-bold">cm</span>
+                  <input class="w-20 h-10 rounded-lg text-black text-2xl pl-1" type="text" id="pantagonA" placeholder="p"><span class="pl-1 text-xl lg:pl-5 text-2xl text-black font-bold">cm</span>
+                  <input class="w-20 h-10 rounded-lg text-black text-2xl pl-1 ml-5" type="text" id="pantagonP" placeholder="a"><span class="pl-1 text-xl lg:pl-5 text-2xl text-black font-bold">cm</span>
                 </div>
                 <!-- input -->
                 <!-- store -->
@@ -150,7 +150,9 @@
 
 
         </div>
-        <div id="secon-div">
+        <div id="secon-div" class="text-white text-4xl text-center w-[100%]  font-bold mt-5 lg:w-[20%]">
+          <h1>Area Calculator</h1>
+          <hr>
     
         </div>
     </div>

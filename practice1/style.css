@@ -5,12 +5,12 @@ body {
 
 #div-id {
   border: 1px solid #fff;
-  width: 80%;
+  /* width: 80%; */
   /* height: 150vh; */
 }
 #secon-div {
   border: 1px solid #fff;
-  width: 20%;
+  /* width: 20%; */
   /* height: 150vh; */
 }
 ::placeholder {
