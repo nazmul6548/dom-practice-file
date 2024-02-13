@@ -13,9 +13,10 @@ const addid = document.getElementById('button-id').addEventListener('click',() =
 
     const result = 0.5 * base * base1;
     // return result;
-    console.log(result);
+    // console.log(result);
     const triangelspan = document.getElementById('triangelArea');
     triangelspan.innerHTML = result;
+
     input11.value="";
     input22.value="";
 });

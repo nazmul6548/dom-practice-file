@@ -11,4 +11,10 @@ const mainName = document.getElementById('ParallelogramButton').addEventListener
 
     const result = paral * paral2;
     console.log(result);
+
+    const areas = document.getElementById('ParallelogramlArea');
+    areas.innerHTML = result;
+
+    paralelogramBase.value = "";
+    paralelogramHeigh.value = "";
 });
