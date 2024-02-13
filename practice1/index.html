@@ -13,13 +13,13 @@
         <div id="div-id">
 
             <!-- card 1 -->
-            <div class="card w-96 bg-base-300 shadow-xl mt-5 ml-5">
+            <div class="card w-96 bg-base-300 shadow-xl pt-5">
                 <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
-                <div class="card-body">
-                  <h2 class="card-title text-slate-900 text-3xl font-bold">Triangle...</h2>
-                  <p class="text-slate-900 text-3xl">Area = 0.5 X b X h</p>
+                <div class="card-body ">
+                  <h2 class="card-title text-slate-900 text-3xl font-bold pb-3">Triangle...</h2>
+                  <p class="text-slate-900 text-3xl pb-3">Area = 0.5 X b X h</p>
                   <!-- input -->
-                  <div class="flex">
+                  <div class="flex pb-3">
                     <input class="w-20 h-10 rounded-lg text-black text-2xl pl-5" type="text" id="input1" placeholder="b"> <span class="pl-5 text-2xl text-black font-bold">cm</span>
                     <input class="w-20 h-10 rounded-lg text-black text-2xl pl-5 ml-5" type="text" id="input2" placeholder="h"> <span class="pl-5 text-2xl text-black font-bold">cm</span>
 
@@ -27,7 +27,7 @@
                   <!-- input -->
                   <!-- store -->
                   <div>
-                    <p class="text-2xl text-black">Area: <span id="triangelArea">result</span>   <span class="text-2xl  font-bold">cm<sup>2</sup></span></p>
+                    <p class="text-2xl text-black pb-3">Area: <span id="triangelArea">result</span>   <span class="text-2xl  font-bold">cm<sup>2</sup></span></p>
 
                   </div>
                   <!-- store -->
@@ -37,6 +37,50 @@
                 </div>
               </div>
             <!-- card 1 -->
+
+            <!-- card2 -->
+            <div class="card w-96 bg-orange-200 shadow-xl pt-5">
+              <figure><img src="./images/rectangle.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title text-slate-900 text-3xl font-bold pb-3">Rectangle...</h2>
+                <p class="text-slate-900 text-3xl pb-3">Area (A) = w X I</p>
+                <!-- input -->
+                <div class="flex pb-3">
+                  <input class="w-20 h-10 rounded-lg text-black text-2xl pl-1" type="text" id="rectangleLength" placeholder="length"><span class="pl-5 text-2xl text-black font-bold">cm</span>
+                  <input class="w-20 h-10 rounded-lg text-black text-2xl pl-1 ml-5" type="text" id="rectanglewidth" placeholder="width"><span class="pl-5 text-2xl text-black font-bold">cm</span>
+                </div>
+                <!-- input -->
+                <!-- store -->
+                <p class="text-2xl text-black pb-3">Area: <span id="rectangelArea">result</span>   <span class="text-2xl  font-bold">cm<sup>2</sup></span></p>
+                <!-- store -->
+                <div id="rectangleButton" class="card-actions justify-end">
+                  <button class="btn btn-primary w-full text-white text-2xl bg-orange-600 border-0">Calculate</button>
+                </div>
+              </div>
+            </div>
+            <!-- card2 -->
+
+            <!-- card3 -->
+            <div class="card w-96 bg-cyan-300 shadow-xl pt-5">
+              <figure><img src="./images/parallelogram.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title text-slate-900 text-3xl font-bold pb-3">Parallelogram!...</h2>
+                <p class="text-slate-900 text-3xl pb-3">Area (A) = b X h</p>
+                <!-- input -->
+                <div class="flex pb-3">
+                  <input class="w-20 h-10 rounded-lg text-black text-2xl pl-1" type="text" id="parallelogramBase" placeholder="base"><span class="pl-5 text-2xl text-black font-bold">cm</span>
+                  <input class="w-20 h-10 rounded-lg text-black text-2xl pl-1 ml-5" type="text" id="parallelogramHeight" placeholder="height"><span class="pl-5 text-2xl text-black font-bold">cm</span>
+                </div>
+                <!-- input -->
+                <!-- store -->
+                <p class="text-2xl text-black pb-3">Area: <span id="rectangelArea">result</span>   <span class="text-2xl  font-bold">cm<sup>2</sup></span></p>
+                <!-- store -->
+                <div id="ParallelogramButton" class="card-actions justify-end">
+                  <button class="btn btn-primary w-full text-white text-2xl bg-blue-800 border-0">Calculate</button>
+                </div>
+              </div>
+            </div>
+            <!-- card3 -->
 
 
         </div>
@@ -75,5 +119,7 @@
 
 
     <script src="./script.js"></script>
+    <script src="./rectangle.js"></script>
+    <script src="./Parallelogram.js"></script>
 </body>
 </html>
